@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Document Summarizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AI Document Summarizer</h1>
+    <p>Upload your document and get a concise summary instantly</p>
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <div class="upload-box">
+        <input type="file" id="fileInput" hidden>
+        <label for="fileInput" class="upload-label">📄 Choose Document</label>
+        <p class="file-name" id="fileName">No file selected</p>
+        <button id="summarizeBtn">Summarize</button>
+      </div>
+    </section>
+
+    <!-- Loader and Summary -->
+    <section class="summary-section">
+      <h2>Summary</h2>
+      <div id="summaryBox" class="summary-box">
+        <p>Upload a file and click "Summarize" to see the results here...</p>
+      </div>
+
+      <!-- Download Button -->
+      <button id="downloadBtn">Download Summary</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>⚡ Powered by Hugging Face BART/T5 | Made by Danish Bajwa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
